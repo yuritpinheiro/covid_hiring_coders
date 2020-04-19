@@ -1,16 +1,38 @@
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: stretch;
     font-family: sans-serif;
     background-color: rgb(231, 231, 231);
     background-image: url("/images/noise-texture.png");
     margin: 0;
     color: rgb(98, 98, 98);
+    font-size: 24px;
 }   
 
+a {
+    color: inherit;
+    text-decoration: unset;
+}
+
 header {
+    width: 100%;    
+}
+.header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(rgba(180, 180, 180, 1), rgba(180, 180, 180, 0));
+}
+.covid-logo{
+    padding: 23px;
+    height: 120px;
 }
 
 .page-title {
@@ -23,31 +45,57 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     color: rgb(98, 98, 98);
+    /* align-items: flex-start; */
 }
 
 main {
     padding: 0px 15%;
 }
 
-footer {
-    margin-top: auto;
-    color: rgb(61, 61, 61);
-    background-image: linear-gradient(rgba(200, 200, 200, 0), rgba(200, 200, 200, 1));
-}
 
 figure {
+    text-align: center;
     height: fit-content;
 }
 
-.imagem-noticia {
-    height: 200px;
+.noticia-media-float{
+    float: left;
+    margin: 24px 40px;
 }
 
-a {
-    color: inherit;
-    text-decoration: unset;
+.imagem-noticia {
+    height: 400px;
 }
+
+.referencia {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
 
 audio:focus, video:focus{
     outline:none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    justify-content: flex-start;
+    padding: 20px 18px 0px 18px;
+    color: rgb(61, 61, 61);
+    background-image: linear-gradient(rgba(200, 200, 200, 0), rgba(150, 150, 150, 1));
+}
+
+.contact-link {
+    display: flex;
+    margin: 0px 18px 20px 18px;
+    height: fit-content;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 32px;
+    margin-right: 8px;
 }
