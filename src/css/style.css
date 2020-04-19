@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(231, 231, 231);
+    background-image: url("/images/noise-texture.png");
+    margin: 0;
+    color: rgb(98, 98, 98);
+}   
+
+header {
+    background-image: linear-gradient(rgba(180, 180, 180, 1), rgba(180, 180, 180, 0));
+}
+
+.page-title {
+    color: rgb(61, 61, 61);
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(98, 98, 98);
+}
+
+main {
+    padding: 0px 15%;
+}
+
+footer {
+    margin-top: auto;
+    color: rgb(61, 61, 61);
+    background-image: linear-gradient(rgba(200, 200, 200, 0), rgba(200, 200, 200, 1));
+}
+
+figure {
+    height: fit-content;
+}
+
+.imagem-noticia {
+    height: 200px;
+}
+
+a {
+    color: inherit;
+    text-decoration: unset;
+}
+
+audio:focus, video:focus{
+    outline:none;
+}
