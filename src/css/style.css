@@ -20,9 +20,14 @@ a {
     text-decoration: unset;
 }
 
+.active, a:hover {
+    color: rgb(68, 68, 68);
+}
+
 header {
     width: 100%;    
 }
+
 .header-title {
     display: flex;
     flex-direction: row;
@@ -40,18 +45,25 @@ header {
 }
 
 nav {
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: rgb(98, 98, 98);
-    /* align-items: flex-start; */
 }
 
 main {
     padding: 0px 15%;
 }
 
+.sobre-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.sobre-text {
+    margin-left: 60px;
+}
 
 figure {
     text-align: center;
@@ -71,8 +83,6 @@ figure {
     font-style: italic;
     font-weight: lighter;
 }
-
-
 
 audio:focus, video:focus{
     outline:none;
@@ -94,8 +104,28 @@ footer {
     height: fit-content;
     align-items: center;
 }
+.contact-link:hover{
+    color: rgb(98, 98, 98);
+}
 
 .contact-icon {
     width: 32px;
     margin-right: 8px;
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.input-contato {
+    margin: 8px 0px;
+    font-size: 22px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

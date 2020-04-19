@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>COVID News</title>
-		<link rel="stylesheet" href="/css/style.css">
-	</head>
-	<body>
-		<header>
-			<h1 class="page-title">
-				COVID News - Contato
-			</h1>
-			<nav>
-				<a href="/index.html">Home</a>
-				<a href="/pages/sobre.html">Sobre</a>
-				<a href="/pages/contato.html">Contato</a>
-				<a href="/pages/saiba_mais.html">Saiba Mais</a>
-			</nav>
-		</header>
-		<main>
-		</main>
-		<footer>
 
-		</footer>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yuri Thomas">
+    <meta name="description" content="Formulário para contato com o desenvolvedor">
+    <title>COVID News</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <img class="covid-logo" src="/images/covid_logo.png" alt="COVID Logo">
+            <h1 class="page-title">
+                Contato
+            </h1>
+        </div>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/sobre.html">Sobre</a>
+            <a href="#" class="active">Contato</a>
+            <a href="/pages/saiba_mais.html">Saiba Mais</a>
+        </nav>
+    </header>
+    <main class="contato">
+        <h3>Entre em contato</h3>
+        <form class="form-contato" action="#" method="post">
+            <input class="input-contato" type="text" placeholder="Nome">
+            <input class="input-contato" type="email" placeholder="E-mail">
+            <textarea class="input-contato" name="mensagem" id="mensagem" cols="30" rows="6"
+                placeholder="Mensagem"></textarea>
+            <input class="btn-enviar-contato input-contato" type="button" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <a class="contact-link" href="https://www.linkedin.com/in/yuritpinheiro/">
+            <img class="contact-icon" src="/images/linkedin.png" alt="LinkedIn">
+            yuritpinheiro
+        </a>
+        <a class="contact-link" href="https://github.com/yuritpinheiro">
+            <img class="contact-icon" src="/images/github.png" alt="GitHub">
+            yuritpinheiro
+        </a>
+    </footer>
+</body>
+
 </html>
